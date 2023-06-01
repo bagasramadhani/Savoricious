@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignIn_Page">
+
+
+    <ImageView
+        android:id="@+id/imageView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1"/>
+
+    <ImageView
+        android:id="@+id/imageView_2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="185dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"/>
+
+    <ImageView
+        android:id="@+id/imageView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/bg3"/>
+
+    <ImageView
+        android:id="@+id/imageView_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg4"/>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="MASUK" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Selamat Datang Kembali" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#D12827"
+            android:background="@android:color/transparent"
+            android:text="Masuk" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:text="Daftar" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_below="@+id/button_signin"
+        android:layout_marginTop="100dp"
+        android:id="@+id/editTextTextEmailAddress"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+</RelativeLayout>

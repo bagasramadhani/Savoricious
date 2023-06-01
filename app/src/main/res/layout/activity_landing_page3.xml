@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".LandingPage1">
+
+
+    <ImageView
+        android:id="@+id/iv_lp3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/iv_lp3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/iv_lp3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Dengan Savoricious keluarga anda akan lebih harmonis pastinya, karena anda telah menghidangkan menu baru favorit untuk keluarga anda tercinta, Selamat menikmati" />
+
+    <ImageView
+        android:id="@+id/iv_move_lp3"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/iv_move_lp3" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_below="@+id/iv_move_lp3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D12827"
+        android:text="Daftar" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Sudah Punya Akun?" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="9dp"
+            android:textColor="#D02827"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Masuk" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

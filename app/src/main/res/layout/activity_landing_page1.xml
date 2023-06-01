@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".LandingPage1">
+
+
+    <ImageView
+        android:id="@+id/iv_lp1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/iv_lp1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/iv_lp1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Bingung mau masak apa untuk keluarga anda? jangan khawatir ada  Savoricious yang siap memandu anda untuk memasak makanan yang lezat" />
+
+    <ImageView
+        android:id="@+id/iv_move_lp1"
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/iv_move_lp1" />
+
+    <Button
+        android:id="@+id/btn_lanjut1"
+        android:layout_below="@+id/iv_move_lp1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D12827"
+        android:text="Lanjut" />
+
+
+</RelativeLayout>
