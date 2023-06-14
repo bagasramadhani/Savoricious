@@ -48,8 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".HomePage">
-
-
         <FrameLayout
             android:id="@+id/fl_navbar"
             android:layout_width="match_parent"
@@ -58,8 +56,6 @@
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-
-
         </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
