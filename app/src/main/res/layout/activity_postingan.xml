@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/back"
+                android:background="@drawable/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/share"
+                android:background="@drawable/share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unggah"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="85dp"
+            android:layout_height="79dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clipToOutline="true"
+            tools:src="@drawable/pilih_foto"/>
+
+        <TextView
+            android:id="@+id/nama_resep"
+            android:layout_width="102dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Nama Resep"
+            android:textSize="18sp"
+            android:textAppearance="Nama Resep"
+            android:layout_marginTop="1dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:clipToOutline="true" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
