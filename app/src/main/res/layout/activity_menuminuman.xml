@@ -1,9 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menuminuman">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_minuman"
+        android:layout_width="301dp"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/baegemail"
+        android:hint="cari resep"
+        android:text="16sp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="cari resep">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <ImageView
+        android:id="@+id/filterminuman"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vector"
+        />
+    <Button
+        android:id="@+id/filtermin"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="filter"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/tbmakanan_minuman"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Makanan"
+        android:textSize="12sp"
+        android:textColor="@color/whait"
+        app:rippleColor="#D22827"
+        android:background="@color/grey"/>
+
+
+
+    <Button
+        android:id="@+id/tbminuman_minuman"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/red"
+        android:text="Minuman"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/tbkhusus_minuman"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/poppinsmedium"
+        android:shadowColor="#23FFFFFF"
+        android:text="khusus"
+        android:textColor="@color/whait"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/tbkue_minuman"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/grey"
+        android:text="kue"
+        android:textColor="@color/whait"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/image_makanan1a_mnm"
+        android:layout_width="328dp"
+        android:layout_height="139dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/baegmaka" />
+
+    <TextView
+        android:id="@+id/textnasi1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="89dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Es Kuwut Timun "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decresepnasi1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="61dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Es Kuwut"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deckampung1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Timun Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat1a_mnm"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/image_makanan21a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="320dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+
+    <TextView
+        android:id="@+id/texttelur1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="86dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Es Laksamangga"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tdecreseptelur1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Es Laksamangga"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/decbalado1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="151dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text=" Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat21a_mnm"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/image_makanan31a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="118dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+    <TextView
+        android:id="@+id/textsup1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Es Sarang Buah"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decsup1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Es Sarang"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deckuah1a_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="104dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Buah Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat31a_mnm"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="576dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/buttontampil_mnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/oppinsemibold"
+        android:text="Tampil Lebih Banyak"
+        android:textColor="#D12827" />
+
+    <ImageView
+        android:id="@+id/buah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="123dp"
+        app:srcCompat="@drawable/bauah" />
+
+    <ImageView
+        android:id="@+id/mangga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="275dp"
+        app:srcCompat="@drawable/mawut" />
+
+    <ImageView
+        android:id="@+id/kuwut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="171dp"
+        app:srcCompat="@drawable/lkuwut" />
+
+
+</RelativeLayout>

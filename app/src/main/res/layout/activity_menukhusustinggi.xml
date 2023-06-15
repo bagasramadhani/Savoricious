@@ -1,9 +1,358 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menukhusustinggi">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_khusustinggi"
+        android:layout_width="301dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/baegemail"
+        android:hint="cari resep"
+        android:text="16sp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="cari resep">
+
+
+
+    </androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/filterkhusustinggi"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vector"
+        />
+    <Button
+        android:id="@+id/filterkhustexting"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="filter"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/tbmakanan"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Makanan"
+        android:textSize="12sp"
+        android:textColor="@color/whait"
+        app:rippleColor="#D22827"
+        android:background="@color/grey"/>
+
+
+
+    <Button
+        android:id="@+id/tbminuman"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/grey"
+        android:text="Minuman"
+        android:textSize="12sp"
+        android:textColor="@color/whait"
+        />
+
+    <Button
+        android:id="@+id/tbkhusus"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/red"
+        android:fontFamily="@font/poppinsmedium"
+        android:shadowColor="#23FFFFFF"
+        android:text="khusus"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/tbkue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/grey"
+        android:text="kue"
+        android:textColor="@color/whait"
+        android:textSize="12sp"
+        />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/baegkal"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="156dp"
+        app:srcCompat="@drawable/kalbaeg" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="161dp"
+        app:srcCompat="@drawable/api" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="179dp"
+        android:text="Kalori" />
+
+
+
+    <Button
+        android:id="@+id/rendhah"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="240dp"
+        android:text="kalori tinggi"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="14sp"
+        android:background="@drawable/masukshape"/>
+
+    <Button
+        android:id="@+id/tinggi"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/backredah"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="kalori rendah"
+        android:textColor="@color/red"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        app:srcCompat="@drawable/tinggi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <ImageView
+        android:id="@+id/baegmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="303dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+    <TextView
+        android:id="@+id/textburger_khusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="83dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Burger Daging Sapi"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decresepburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep buger daging"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/decjagung_khusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="127dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Sapi Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonburger_rendah"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/oatbaeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="123dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+    <Button
+        android:id="@+id/buttonpizza_khusus"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/texpizza_khusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="479dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="PizzaAyam Macaroni"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decreseppizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Pizza Ayam"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/decpizza_khusus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="533dp"
+        android:layout_marginEnd="101dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Ayam Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttontampil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/oppinsemibold"
+        android:text="Tampil Lebih Banyak"
+        android:textColor="#D12827" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="293dp"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="126dp"
+        app:srcCompat="@drawable/pizza" />
+
+
+</RelativeLayout>
