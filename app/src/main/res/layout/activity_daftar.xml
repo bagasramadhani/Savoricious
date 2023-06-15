@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/baeg"
     android:orientation="vertical"
-    tools:context=".loginActivity">
+    tools:context=".daftarActivity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="149dp"
         android:layout_marginTop="76dp"
-        app:srcCompat="@drawable/Masuk" />
+        app:srcCompat="@drawable/masuk" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="109dp"
-        app:srcCompat="@drawable/Sela" />
+        app:srcCompat="@drawable/sela" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -75,5 +75,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="85dp"
-        app:srcCompat="@drawable/Belum" />
+        app:srcCompat="@drawable/belum" />
 </RelativeLayout>

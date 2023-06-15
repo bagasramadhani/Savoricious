@@ -1,12 +1,13 @@
 package com.infinitelearning.savoricious
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import com.infinitelearning.savoricious.databinding.ActivityHomePageBinding
 
 class HomePage : AppCompatActivity() {
-
     private lateinit var binding : ActivityHomePageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,10 @@ class HomePage : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Home())
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
+
+
+
+    binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){
                 R.id.nb_home -> replaceFragment(Home())
@@ -39,7 +43,7 @@ class HomePage : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fl_navbar,fragment)
+        fragmentTransaction.replace(R.id.frame_layout,fragment)
         fragmentTransaction.commit()
 
     }
