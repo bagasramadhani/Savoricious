@@ -136,11 +136,11 @@ class Home : Fragment(),MenuClickListener {
 
         populatemenuDetaillist()
 
-        val home = this
-        binding.rvPopuler.apply {
-            layoutManager = GridLayoutManager(activity  , 2)
-            adapter = CardAdapter(menuDetaillist, home)
-        }
+//        val home = this
+//        binding.rvPopuler.apply {
+//            layoutManager = GridLayoutManager(activity  , 2)
+//            adapter = CardAdapter(menuDetaillist, home)
+//        }
 
         return view
     }
