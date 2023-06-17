@@ -28,6 +28,8 @@
         android:textColor="@color/black"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="12dp"
         android:text="Dengan Savoricious keluarga anda akan lebih harmonis pastinya, karena anda telah menghidangkan menu baru favorit untuk keluarga anda tercinta, Selamat menikmati" />
 
     <ImageView
@@ -44,13 +46,15 @@
         android:id="@+id/btn_daftar"
         android:layout_below="@+id/iv_move_lp3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#D12827"
+        android:textColor="@color/white"
+        android:background="@drawable/bgbuttonlp"
         android:text="Daftar" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,15 +68,15 @@
             android:textColor="@color/black"
             android:text="Sudah Punya Akun?" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:textSize="9dp"
-            android:textColor="#D02827"
-            android:background="@android:color/transparent"
-            android:backgroundTint="@android:color/transparent"
-            android:text="Masuk" />
+        <TextView
+            android:id="@+id/buttonmasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_marginLeft="5dp"
+            android:text="Masuk"
+            android:textSize="12dp"/>
+
 
     </LinearLayout>
 

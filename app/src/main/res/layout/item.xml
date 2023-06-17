@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:text="Bayam"
                 android:textSize="11dp"
+                android:fontFamily="@font/poppinsmedium"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/button4"

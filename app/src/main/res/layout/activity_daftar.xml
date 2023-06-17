@@ -5,19 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/baeg"
-    android:orientation="vertical"
-    tools:context=".daftarActivity">
+    android:orientation="vertical">
 
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="289dp"
+        android:text="password"
+        android:textColor="@color/black_2"
+        android:textStyle="bold" />
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="76dp"
-        app:srcCompat="@drawable/masuk" />
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/masuk" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -25,55 +36,242 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="109dp"
-        app:srcCompat="@drawable/sela" />
+        android:layout_marginTop="102dp"
+        android:src="@drawable/sela" />
 
-    <ImageView
-        android:id="@+id/imageView11"
+    <Button
+        android:id="@+id/button1a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="167dp"
-        app:srcCompat="@drawable/ooo" />
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="520dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/oppinsemibold"
+        android:text="Daftar"
+        android:textColor="@color/red" />
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/button2a"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_buttonmasuk"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="520dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/oppinsemibold"
         android:text="Masuk"
-        android:layout_marginTop="200dp"
-        android:layout_marginRight="235dp"/>
+        android:textColor="@color/grey_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="273dp"
+        android:text="Nama"
+        android:textColor="@color/black_2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="350dp"
+        android:text="Email"
+        android:textColor="@color/black_2"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="209dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:includeFontPadding="false"
+        android:text="Konfirmasi Password"
+        android:textColor="@color/black_2"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"/>
+
+
+
+
 
     <Button
+        android:id="@+id/button5a"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/masukshape"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Daftar"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/textView5a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="54dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Belum punya akun ? "
+        android:textColor="@color/black_1" />
+
+    <Button
+        android:id="@+id/button6a"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="42dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Daftar"
+        android:textColor="@color/red" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginTop="198dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="65dp"
-        android:background="@drawable/bg_buttonmasuk"
-        android:text="Daftar" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="103dp"
-        app:srcCompat="@drawable/daf" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="286dp">
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dft_nama"
+            android:layout_width="328dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/baegemail"
+            android:drawableLeft="@drawable/ph_user"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="  Masukkan Nama"
+            android:padding="10dp"
+            android:textColor="@color/grey_1"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="341dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dftmail"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="85dp"
-        app:srcCompat="@drawable/belum" />
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="375dp"
+        android:background="@drawable/baegemail"
+        android:drawableLeft="@drawable/addsimbol"
+        android:fontFamily="@font/poppinsregular"
+        android:hint=" masukkan email"
+        android:padding="10dp"
+        android:textColor="@color/grey_1"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="260dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dft_email"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="448dp"
+        android:background="@drawable/baegemail"
+        android:drawableLeft="@drawable/img"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:fontFamily="@font/poppinsregular"
+        android:hint=" masukkan password"
+        android:padding="10dp"
+        android:textColor="@color/grey_1"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="186dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email1a"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/baegemail"
+        android:drawableLeft="@drawable/img"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:fontFamily="@font/poppinsregular"
+        android:hint=" masukkan konfirmasi password"
+        android:padding="10dp"
+        android:textColor="@color/grey_1"
+        android:textSize="14sp"
+        android:textStyle="normal" />
 </RelativeLayout>
+
+

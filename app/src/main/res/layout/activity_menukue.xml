@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menukue">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_kue"
+        android:layout_width="301dp"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/baegemail"
+        android:hint="cari resep"
+        android:text="16sp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@android:color/transparent"
+        app:queryHint="cari resep">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/filterkue"
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vector"
+         />
+    <Button
+        android:id="@+id/filterkuetex"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppinsregular"
+        android:text="filter"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/tbmakanan_kue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Makanan"
+        android:textSize="12sp"
+        android:textColor="@color/whait"
+        app:rippleColor="#D22827"
+        android:background="@color/grey"/>
+
+
+
+    <Button
+        android:id="@+id/tbminuman_kue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/grey"
+        android:text="Minuman"
+        android:textSize="12sp"
+        android:textColor="@color/whait"
+        />
+
+    <Button
+        android:id="@+id/tbkhusus_kue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/grey"
+        android:fontFamily="@font/poppinsmedium"
+        android:shadowColor="#23FFFFFF"
+        android:text="khusus"
+        android:textColor="@color/whait"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/tbkue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:background="@color/red"
+        android:text="kue"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/image_makanan1a_kue"
+        android:layout_width="328dp"
+        android:layout_height="139dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/baegmaka" />
+
+    <TextView
+        android:id="@+id/textnasi1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="121dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Pie Es Teler"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decresepnasi1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Pie Es"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deckampung1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Teler Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat1a_kue"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/image_makanan21a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="320dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+
+    <TextView
+        android:id="@+id/texttelur1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="327dp"
+        android:layout_marginEnd="142dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Bika Ambon"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tdecreseptelur1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Bika Ambon"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/decbalado1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="159dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text=" Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat21a_kue"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/image_makanan31a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="118dp"
+        app:srcCompat="@drawable/baegmaka" />
+
+    <TextView
+        android:id="@+id/textsup1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Kue Lumpur Labu"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/decsup1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Coba Resep Kue Lumpur"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/deckuah1a_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="548dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text=" Kreasimu"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihat31a_kue"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="576dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Lihat Resep"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/buttontampil_kue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/oppinsemibold"
+        android:text="Tampil Lebih Banyak"
+        android:textColor="#D12827" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="172dp"
+        app:srcCompat="@drawable/pie" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="275dp"
+        app:srcCompat="@drawable/bika" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="123dp"
+        app:srcCompat="@drawable/lumpur" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationmobile">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.infinitelearning.savoricious.Home"
+        android:label="home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.infinitelearning.savoricious.Menu"
+        android:label="menu"
+        tools:layout="@layout/fragment_menu"/>
+
+    <fragment
+        android:id="@+id/search_bar"
+        android:name="com.infinitelearning.savoricious.Add"
+        android:label="Add"
+        tools:layout="@layout/fragment_add"/>
+
+    <fragment
+        android:id="@+id/comunity"
+        android:name="com.infinitelearning.savoricious.Comunity"
+        android:label="comunity"
+        tools:layout="@layout/fragment_comunity"/>
+
+    <fragment
+        android:id="@+id/profil"
+        android:name="com.infinitelearning.savoricious.Profile"
+        android:label="profil"
+        tools:layout="@layout/fragment_profile"/>
+
+</navigation>
