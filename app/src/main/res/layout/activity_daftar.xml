@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/baeg"
-<<<<<<< HEAD
     android:orientation="vertical">
 
 
@@ -20,10 +19,6 @@
         android:text="password"
         android:textColor="@color/black_2"
         android:textStyle="bold" />
-=======
-    android:orientation="vertical"
-    tools:context=".daftarActivity">
->>>>>>> 0844d6e2c1ae4d6c43f9053f3062194f19025534
 
     <ImageView
         android:id="@+id/imageView8"
@@ -32,15 +27,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
+
         android:layout_marginStart="151dp"
         android:layout_marginTop="64dp"
         android:src="@drawable/masuk" />
-=======
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="76dp"
-        app:srcCompat="@drawable/masuk" />
->>>>>>> 0844d6e2c1ae4d6c43f9053f3062194f19025534
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -48,13 +39,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
+
         android:layout_marginTop="102dp"
         android:src="@drawable/sela" />
-=======
-        android:layout_marginTop="109dp"
-        app:srcCompat="@drawable/sela" />
->>>>>>> 0844d6e2c1ae4d6c43f9053f3062194f19025534
+
 
 
 
@@ -223,7 +211,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
+
         android:layout_marginStart="44dp"
         android:layout_marginTop="375dp"
         android:background="@drawable/baegemail"
@@ -297,8 +285,6 @@
 
 
 
-=======
-        android:layout_marginBottom="85dp"
-        app:srcCompat="@drawable/belum" />
-</RelativeLayout>
->>>>>>> 0844d6e2c1ae4d6c43f9053f3062194f19025534
+
+
+

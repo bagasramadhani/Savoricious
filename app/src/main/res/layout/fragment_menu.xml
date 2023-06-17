@@ -215,16 +215,6 @@
         app:srcCompat="@drawable/baegmaka" />
 
 
-    <ImageView
-        android:id="@+id/telur1a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="324dp"
-        app:srcCompat="@drawable/telur" />
-
     <TextView
         android:id="@+id/texttelur1a"
         android:layout_width="wrap_content"
@@ -372,6 +362,16 @@
         android:fontFamily="@font/oppinsemibold"
         android:text="Tampil Lebih Banyak"
         android:textColor="#D12827" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="275dp"
+        android:src="@drawable/balabalado" />
 
 
 </RelativeLayout>
