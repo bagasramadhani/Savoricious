@@ -13,7 +13,7 @@
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_bar"
         android:layout_width="301dp"
-        android:layout_height="56dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -61,61 +61,60 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/tbmakanan"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:text="Makanan"
-        android:textSize="12sp"
-        android:textColor="@color/white"
-        app:rippleColor="#D22827"
-        android:background="@color/red"/>
-
+        <Button
+            android:id="@+id/tbmakanan"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Makanan"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            app:rippleColor="#D22827"
+            android:background="@color/red"/>
 
 
-    <Button
-        android:id="@+id/tbminuman"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/poppinsmedium"
-        android:background="@color/grey"
-        android:text="Minuman"
-        android:textSize="12sp"
-        android:textColor="@color/whait"
-         />
+        <Button
+            android:id="@+id/tbminuman"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@color/grey"
+            android:text="Minuman"
+            android:textSize="12sp"
+            android:textColor="@color/whait"
+            />
 
-    <Button
-        android:id="@+id/tbkhusus"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="90dp"
-        android:background="@color/grey"
-        android:fontFamily="@font/poppinsmedium"
-        android:shadowColor="#23FFFFFF"
-        android:text="khusus"
-        android:textColor="@color/whait"
-        android:textSize="12sp" />
+        <Button
+            android:id="@+id/tbkhusus"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="90dp"
+            android:background="@color/grey"
+            android:fontFamily="@font/poppinsmedium"
+            android:shadowColor="#23FFFFFF"
+            android:text="khusus"
+            android:textColor="@color/whait"
+            android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/tbkue"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="90dp"
-        android:fontFamily="@font/poppinsmedium"
-       android:background="@color/grey"
-        android:text="kue"
-        android:textColor="@color/whait"
-        android:textSize="12sp"
-         />
+        <Button
+            android:id="@+id/tbkue"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:background="@color/grey"
+            android:text="kue"
+            android:textColor="@color/whait"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
 
 
     <ImageView

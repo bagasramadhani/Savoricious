@@ -3,10 +3,13 @@ package com.infinitelearning.savoricious
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.renderscript.Sampler.Value
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,7 +18,11 @@ import com.infinitelearning.savoricious.adapter.BahanAdapter
 import com.infinitelearning.savoricious.adapter.CardAdapter
 import com.infinitelearning.savoricious.databinding.FragmentHomeBinding
 import com.infinitelearning.savoricious.model.ModelBahan
+import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.card_item.view.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
+import kotlin.math.log
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -43,14 +50,17 @@ class Home : Fragment(),MenuClickListener {
         }
 
 
-
-
     }
+
+
 
     override fun onClick(menu: MenuDetail) {
         val intent = Intent(activity?.applicationContext, DetailActivity::class.java)
         intent.putExtra(MENU_ID_EXTRA, menu.id)
         startActivity(intent)
+
+
+
     }
 
 
@@ -113,6 +123,8 @@ class Home : Fragment(),MenuClickListener {
     // private var binding : FragmentHomeBinding? = null
     lateinit var rvbahan :  RecyclerView
 
+
+
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
@@ -120,6 +132,8 @@ class Home : Fragment(),MenuClickListener {
 
 
     ): View? {
+
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
@@ -141,7 +155,6 @@ class Home : Fragment(),MenuClickListener {
 //            layoutManager = GridLayoutManager(activity  , 2)
 //            adapter = CardAdapter(menuDetaillist, home)
 //        }
-
         return view
     }
     val ArrayBahan : ArrayList<ModelBahan>get(){

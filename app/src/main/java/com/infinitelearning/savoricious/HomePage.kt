@@ -23,7 +23,6 @@ class HomePage : AppCompatActivity() {
 
 
 
-
     binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){

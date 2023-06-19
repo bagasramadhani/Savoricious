@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context=".Home">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_search"
         android:layout_width="wrap_content"
@@ -18,13 +19,13 @@
         android:layout_marginEnd="6dp"
         android:background="@drawable/bg_shape"
         android:paddingLeft="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <EditText
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="290dp"
+            android:layout_width="280dp"
             android:layout_height="40dp"
             android:hint="ketik bahan-bahan..."
             android:inputType="textPersonName"
@@ -51,7 +52,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/notiv_icon"
         android:layout_width="25dp"
         android:layout_height="28dp"
         android:layout_marginTop="28dp"
