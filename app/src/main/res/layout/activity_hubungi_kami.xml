@@ -44,27 +44,36 @@
             android:src="@drawable/logo"/>
     </LinearLayout>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_tambah_resep"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/oppinsemibold"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Email Admin Suport"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_whatapp"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/oppinsemibold"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="WhatApp Responden"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_website"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/oppinsemibold"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Websie"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
 </LinearLayout>

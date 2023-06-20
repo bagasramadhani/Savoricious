@@ -9,17 +9,34 @@
     tools:context=".MainActivity"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/text"
-        android:fontFamily="@font/poppins"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Resep saya"
-        android:typeface="normal"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:layout_marginTop="4dp"/>
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/back"
+                android:background="@drawable/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:text="Resep saya"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
 
     <ImageView
         android:id="@+id/image"
@@ -37,28 +54,19 @@
 
     <Button
         android:id="@+id/btn_tambah_resep"
-        android:fontFamily="@font/poppins"
-        android:layout_width="250dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Tambah Resep"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#FECD12"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".HomePage">
-        <FrameLayout
-            android:id="@+id/fl_navbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
 
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
 
 
