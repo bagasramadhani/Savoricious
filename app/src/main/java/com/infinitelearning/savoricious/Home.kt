@@ -1,140 +1,50 @@
 package com.infinitelearning.savoricious
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.renderscript.Sampler.Value
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.infinitelearning.savoricious.adapter.BahanAdapter
-import com.infinitelearning.savoricious.adapter.CardAdapter
+import com.infinitelearning.savoricious.adapter.IsiNotifAdapter
+import com.infinitelearning.savoricious.adapter.PopulerAdapter
 import com.infinitelearning.savoricious.databinding.FragmentHomeBinding
 import com.infinitelearning.savoricious.model.ModelBahan
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.card_item.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlin.math.log
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class Home : Fragment() {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Home.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Home : Fragment(),MenuClickListener {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-
-
+        
     }
 
-
-
-    override fun onClick(menu: MenuDetail) {
-        val intent = Intent(activity?.applicationContext, DetailActivity::class.java)
-        intent.putExtra(MENU_ID_EXTRA, menu.id)
-        startActivity(intent)
-
-
-
-    }
-
-
-    private fun populatemenuDetaillist() {
-        val menu1 = MenuDetail(
-            R.drawable.suptulangkuah,
-            "Uncle Muthu",
-            R.drawable.suptulangkuah,
-            "Sup Tulang Kuah",
-            "(5.0)",
-            "20 menit",
-            "2.000",
-            "deskripsi"
-        )
-        menuDetaillist.add(menu1)
-
-        val menu2 = MenuDetail(
-            R.drawable.suptulangkuah,
-            "chef Juna",
-            R.drawable.tumisbayamjagung,
-            "Tumis Ayam Jagung",
-            "(5.0)",
-            "10 menit",
-            "1.410",
-            "deskripsi"
-        )
-        menuDetaillist.add(menu2)
-
-        val menu3 = MenuDetail(
-            R.drawable.suptulangkuah,
-            "Uncle Muthu",
-            R.drawable.steakdaginglada,
-            "Steak Daging Lada HItam",
-            "(4.0)",
-            "15 menit",
-            "1.000",
-            "deskripsi"
-        )
-        menuDetaillist.add(menu3)
-
-        val menu4 = MenuDetail(
-            R.drawable.suptulangkuah,
-            "Uncle Muthu",
-            R.drawable.ikanguramibakar,
-            "Ikan Gurami Bakar",
-            "(5.0)",
-            "45 menit",
-            "1.210",
-            "deskripsi"
-        )
-        menuDetaillist.add(menu4)
-
-//        menuDetaillist.add(menu1)
-//        menuDetaillist.add(menu2)
-//        menuDetaillist.add(menu3)
-//        menuDetaillist.add(menu4)
-
-    }
-
-    // private var binding : FragmentHomeBinding? = null
     lateinit var rvbahan :  RecyclerView
-
-
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var populerList : ArrayList<Populer>
+    private lateinit var populerAdapter: PopulerAdapter
 
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-
-
+        
     ): View? {
 
-
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         binding = FragmentHomeBinding.inflate(layoutInflater)
@@ -148,13 +58,48 @@ class Home : Fragment(),MenuClickListener {
         rvbahan.layoutManager = lm
         rvbahan.adapter = adapterbahan
 
-        populatemenuDetaillist()
 
-//        val home = this
-//        binding.rvPopuler.apply {
-//            layoutManager = GridLayoutManager(activity  , 2)
-//            adapter = CardAdapter(menuDetaillist, home)
-//        }
+        //
+//
+//        val ln = LinearLayoutManager(activity)
+//        ln.orientation = LinearLayoutManager.HORIZONTAL
+//        rvbahan = view.findViewById(R.id.rv_populer)
+//
+//        val adapterbahan1 = PopulerAdapter(ArrayPopuler,activity)
+//        rvbahan.setHasFixedSize(true)
+//        rvbahan.layoutManager = ln
+//        rvbahan.adapter = adapterbahan1
+        
+
+        val home = this
+        binding.rvPopuler.apply {
+            layoutManager = GridLayoutManager(activity  , 2)
+
+        }
+
+        recyclerView = view.findViewById(R.id.rv_populer)
+        recyclerView.setHasFixedSize(true)
+
+        recyclerView.layoutManager = GridLayoutManager(activity, 2)
+
+        populerList = ArrayList()
+
+        populerList.add(Populer(R.drawable.bgnotiv1, "Uncle Muthu", R.drawable.suptulangkuah, "Sup Tulang Kuah", "(5.0)", "20 menit", "2.210"))
+        populerList.add(Populer(R.drawable.bgnotiv2, "chef Bagas", R.drawable.tumisbayamjagung, "Tumis Bayam Jagung", "(5.0)", "10 menit", "1.410"))
+        populerList.add(Populer(R.drawable.bgnotiv3, "Chef Andis", R.drawable.steakdaginglada, "Steak Daging Lada", "(4.0)", "15 menit", "1.000"))
+        populerList.add(Populer(R.drawable.bgnotiv4, "Chef Nabila", R.drawable.ikanguramibakar, "Ikan Gurami Bakar", "(5.0)", "45 menit", "1.210"))
+
+        populerAdapter = PopulerAdapter(populerList,activity)
+        recyclerView.adapter = populerAdapter
+
+        populerAdapter.onItemClick = {
+            val intent = Intent(activity, DetailActivity::class.java)
+            intent.putExtra("populer", it)
+            startActivity(intent)
+
+        }
+
+
         return view
     }
     val ArrayBahan : ArrayList<ModelBahan>get(){
@@ -205,31 +150,30 @@ class Home : Fragment(),MenuClickListener {
 
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-//         binding = null
+//    val ArrayPopuler: ArrayList<Populer>get(){
+//        val populerList = ArrayList<Populer>()
+//
+//
+//        populerList.add(Populer(R.drawable.bgnotiv1, "Uncle Muthu", R.drawable.suptulangkuah, "Sup Tulang Kuah", "(5.0)", "20 menit", "2.210"))
+//        populerList.add(Populer(R.drawable.bgnotiv2, "chef Bagas", R.drawable.tumisbayamjagung, "Tumis Bayam Jagung", "(5.0)", "10 menit", "1.410"))
+//        populerList.add(Populer(R.drawable.bgnotiv3, "Chef Andis", R.drawable.steakdaginglada, "Steak Daging Lada", "(4.0)", "15 menit", "1.000"))
+//        populerList.add(Populer(R.drawable.bgnotiv4, "Chef Nabila", R.drawable.ikanguramibakar, "Ikan Gurami Bakar", "(5.0)", "45 menit", "1.210"))
+//
+//
+//        return populerList
+//
+//    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val btn_notif = view.findViewById<ImageView>(R.id.notiv_icon)
+        btn_notif.setOnClickListener{
+            startActivity(Intent(activity, Notifikasi::class.java))
+        }
+
+
+
     }
-
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Home.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Home().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
-
-
 }

@@ -4,27 +4,25 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class DetailNotif : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_notif)
 
-        // supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
+        val notif = intent.getParcelableExtra<Notif_Data>("notif")
+        if (notif != null) {
+            val textView: TextView = findViewById(R.id.tv_isinotif)
+            val textView1: TextView = findViewById(R.id.waktu)
+            val imageView: ImageView = findViewById(R.id.iv_notif)
 
-        val IsiNotif = intent.getParcelableExtra<IsiNotif>(Notifikasi.INTENT_PARCELABLE)
 
-        val imgIsiNotif = findViewById<ImageView>(R.id.iv_notif)
-        val isiIsiNotif = findViewById<TextView>(R.id.tv_isinotif)
-        val waktuIsiNotif = findViewById<TextView>(R.id.waktu)
-
-        imgIsiNotif.setImageResource(IsiNotif?.imgIsiNotif!!)
-        isiIsiNotif.text = IsiNotif.isiIsiNotif
-        waktuIsiNotif.text = IsiNotif.waktuIsiNotif
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
+            textView.text = notif.isinotif
+            textView1.text = notif.jam
+            imageView.setImageResource(notif.image)
+        }
     }
 }

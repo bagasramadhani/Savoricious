@@ -1,7 +1,5 @@
 package com.infinitelearning.savoricious;
 
-
-
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -39,7 +38,28 @@ class Menu : Fragment() {
 
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val btn_minuman = view.findViewById<Button>(R.id.tbminuman)
+        btn_minuman.setOnClickListener{
+            startActivity(Intent(activity, LandingPage1::class.java))
+        }
 
+        val btn_khusus = view.findViewById<Button>(R.id.tbkhusus)
+        btn_khusus.setOnClickListener{
+            startActivity(Intent(activity, LandingPage2::class.java))
+        }
+
+        val btn_kue = view.findViewById<Button>(R.id.tbkue)
+        btn_kue.setOnClickListener{
+            startActivity(Intent(activity, LandingPage3::class.java))
+        }
+
+        val btn_makanan = view.findViewById<Button>(R.id.tbmakanan)
+        btn_makanan.setOnClickListener{
+            startActivity(Intent(activity, Menu::class.java))
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -62,17 +82,7 @@ class Menu : Fragment() {
     }
 
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Menu.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
+
         fun newInstance(param1: String, param2: String) =
             Menu().apply {
                 var arguments = Bundle().apply {
@@ -81,4 +91,3 @@ class Menu : Fragment() {
                 }
             }
     }
-}
