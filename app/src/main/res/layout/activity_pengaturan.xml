@@ -4,10 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <RelativeLayout
             android:layout_marginRight="20dp"
             android:layout_width="match_parent"
@@ -18,15 +16,17 @@
                 android:background="@drawable/back"
                 android:layout_width="30dp"
                 android:layout_height="30dp" />
+
             <TextView
-                android:fontFamily="@font/poppins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
                 android:text="Pengaturan"
-                android:typeface="normal"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textSize="18sp"/>
+                android:textColor="@color/black"
+                android:typeface="normal" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -85,12 +85,15 @@
     </RelativeLayout>
 
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_tambah_resep"
         android:fontFamily="@font/poppins"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Keluar"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
 
 
