@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    tools:context=".Profile2"
     android:orientation="vertical">
 
     <LinearLayout
@@ -99,8 +101,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginLeft="25dp"
+                    android:gravity="center"
                     android:orientation="horizontal"
                     app:layout_constraintStart_toEndOf="@+id/imageView2"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout">
@@ -118,14 +120,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
                         android:fontFamily="@font/poppinsmedium"
                         android:text="Pengikut"
-                        android:layout_marginLeft="20dp"
                         android:textColor="@color/black"
                         android:textSize="12dp" />
 
                 </LinearLayout>
-
 
 
             </LinearLayout>
@@ -213,7 +214,7 @@
             android:fontFamily="@font/poppinsmedium"
             android:gravity="center"
             android:text="Resep Saya"
-            android:textColor="#C1FF0000"
+            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
@@ -224,8 +225,8 @@
             android:background="@color/white"
             android:fontFamily="@font/poppinsmedium"
             android:gravity="center"
+            android:textColor="#C1FF0000"
             android:text="Koleksi"
-            android:textColor="@color/black"
             android:textSize="16dp"
             android:textStyle="bold" />
 
@@ -265,6 +266,22 @@
             app:layout_constraintStart_toEndOf="@+id/imageView18"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/burger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:background="@drawable/bika"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

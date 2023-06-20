@@ -66,7 +66,6 @@
             android:layout_alignParentTop="true"
             android:text="Nama Resep"
             android:textSize="18sp"
-            android:textAppearance="Nama Resep"
             android:layout_marginTop="1dp" />
 
         <EditText

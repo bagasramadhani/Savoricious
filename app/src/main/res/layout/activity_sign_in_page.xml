@@ -231,7 +231,7 @@
         android:drawableLeft="@drawable/img"
         android:fontFamily="@font/poppinsregular"
         android:hint=" masukkan password"
-        android:drawableRight="@drawable/baseline_visibility_off_black"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
         android:padding="10dp"
         android:textColor="@color/grey_1"
         android:textStyle="normal"  />

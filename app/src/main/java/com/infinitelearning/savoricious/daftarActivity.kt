@@ -16,6 +16,14 @@ class daftarActivity : AppCompatActivity(), View.OnClickListener {
         btndaftar = findViewById(R.id.button5a)
 
         btndaftar.setOnClickListener(this)
+
+        val btn_masuk2a = findViewById<Button>(R.id.button2a)
+
+        btn_masuk2a.setOnClickListener {
+            startActivity(Intent(this, SignIn_Page::class.java))
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+
+        }
     }
 
     override fun onClick(v: View) {
@@ -23,6 +31,7 @@ class daftarActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button5a ->{
                 val intentmasuk = Intent(this@daftarActivity, SignIn_Page::class.java)
                 startActivity(intentmasuk)
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
             }
         }
 
