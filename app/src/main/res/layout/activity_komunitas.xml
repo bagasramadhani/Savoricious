@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <androidx.appcompat.widget.Toolbar
         android:background="#D22827"
         android:layout_width="match_parent"
@@ -25,11 +26,6 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <Button
-                android:id="@+id/share"
-                android:background="@drawable/share"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
@@ -47,6 +43,7 @@
         <TextView
             android:id="@+id/untuk_anda"
             android:text="Untuk anda"
+            android:textColor="@color/black"
             android:fontFamily="@font/poppins"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -54,7 +51,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,7 +64,6 @@
             android:layout_alignParentTop="true"
             android:clipToOutline="true"
             tools:src="@drawable/western"/>
-
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -99,17 +94,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-<androidx.appcompat.widget.SearchView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cari_komunitas"/>
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_marginTop="10dp"
         android:background="@drawable/ic_background_abu"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal">
-
 
         <ImageView
             android:layout_width="match_parent"
@@ -125,6 +122,25 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_marginTop="111dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000000"
+            android:text="Komunitas masakan nusantara"
+            android:layout_marginLeft="10sp"/>
 
-    </LinearLayout>
+        <Button
+            android:layout_width="125.75dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="98dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#D22827"
+            android:text="Gabung"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_shape"/>
+    </RelativeLayout>
 </LinearLayout>

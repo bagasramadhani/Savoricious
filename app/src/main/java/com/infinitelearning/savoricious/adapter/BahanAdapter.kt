@@ -4,6 +4,7 @@ import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -27,10 +28,13 @@ class BahanAdapter (var data : ArrayList<ModelBahan>, var context: Activity?)
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.namabahan.text = data[position].namabahan
         holder.gambarbahan.setImageResource(data[position].gambarbahan)
+
+//        holder.cardView.startAnimation(AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.anim_rv));
     }
 
     override fun getItemCount(): Int {
         return data.size
     }
+
 
 }

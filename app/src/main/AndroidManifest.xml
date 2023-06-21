@@ -6,13 +6,20 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+<<<<<<< HEAD
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+=======
+        android:icon="@mipmap/ic_logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
         android:supportsRtl="true"
         android:theme="@style/Theme.Savoricious"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".filter"
             android:exported="false"
             android:label="@string/title_activity_filter"
@@ -59,6 +66,21 @@
         <activity
             android:name=".nasigoreng"
             android:exported="false" />
+=======
+            android:name=".EditProfile"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Profile2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
         <activity
             android:name=".DetailNotif"
             android:exported="false">
@@ -74,6 +96,16 @@
                 android:value="" />
         </activity>
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".daftarActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
             android:name=".HomePage"
             android:exported="true">
             <meta-data
@@ -108,7 +140,47 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+<<<<<<< HEAD
         <activity android:name=".Menu" />
     </application>
 
+=======
+
+        <activity
+            android:name=".Populer"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LandingPage1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
 </manifest>

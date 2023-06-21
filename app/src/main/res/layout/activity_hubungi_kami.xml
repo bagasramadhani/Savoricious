@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
     <androidx.appcompat.widget.Toolbar
 
         android:layout_width="match_parent"
@@ -16,18 +18,18 @@
             <ImageView
                 android:id="@+id/back"
                 android:background="@drawable/back"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
             <TextView
-                android:fontFamily="@font/poppins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:fontFamily="@font/poppinsmedium"
                 android:text="Buat Password"
-                android:typeface="normal"
-                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="18sp"/>
+                android:textSize="16dp"
+                android:typeface="normal" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -44,27 +46,39 @@
             android:src="@drawable/logo"/>
     </LinearLayout>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_tambah_resep"
-        android:fontFamily="@font/poppins"
-        android:layout_width="328dp"
-        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_gravity="center"
+        android:textSize="16dp"
         android:text="Email Admin Suport"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_whatapp"
-        android:fontFamily="@font/poppins"
-        android:layout_width="328dp"
-        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_gravity="center"
+        android:textSize="16dp"
         android:text="WhatApp Responden"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_website"
-        android:fontFamily="@font/poppins"
-        android:layout_width="328dp"
-        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_gravity="center"
         android:text="Websie"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_shape"
         android:backgroundTint="#D22827"/>
 </LinearLayout>

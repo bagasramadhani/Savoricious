@@ -1,7 +1,5 @@
 package com.infinitelearning.savoricious;
 
-
-
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -95,7 +93,39 @@ class Menu : Fragment(), View.OnClickListener {
     private var param1: String? = null
     private var param2: String? = null
 
+<<<<<<< HEAD
+=======
+    public class Menu {
+        protected fun onCreated() {
+            
+        }
+        
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val btn_minuman = view.findViewById<Button>(R.id.tbminuman)
+        btn_minuman.setOnClickListener{
+            startActivity(Intent(activity, LandingPage1::class.java))
+        }
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
+
+        val btn_khusus = view.findViewById<Button>(R.id.tbkhusus)
+        btn_khusus.setOnClickListener{
+            startActivity(Intent(activity, LandingPage2::class.java))
+        }
+
+        val btn_kue = view.findViewById<Button>(R.id.tbkue)
+        btn_kue.setOnClickListener{
+            startActivity(Intent(activity, LandingPage3::class.java))
+        }
+
+        val btn_makanan = view.findViewById<Button>(R.id.tbmakanan)
+        btn_makanan.setOnClickListener{
+            startActivity(Intent(activity, Menu::class.java))
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -124,6 +154,7 @@ class Menu : Fragment(), View.OnClickListener {
 
 
 
+<<<<<<< HEAD
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -135,6 +166,8 @@ class Menu : Fragment(), View.OnClickListener {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
+=======
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
         fun newInstance(param1: String, param2: String) =
             Menu().apply {
                 var arguments = Bundle().apply {
@@ -144,6 +177,7 @@ class Menu : Fragment(), View.OnClickListener {
             }
 
     }
+<<<<<<< HEAD
 
     override fun onClick(v: View?) {
 
@@ -155,3 +189,5 @@ class Menu : Fragment(), View.OnClickListener {
 
 
 
+=======
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0

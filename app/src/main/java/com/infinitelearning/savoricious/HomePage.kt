@@ -24,7 +24,11 @@ class HomePage : AppCompatActivity() {
 
 
 
+<<<<<<< HEAD
         binding.bottomNavigationView.setOnItemSelectedListener {
+=======
+    binding.bottomNavigationView.setOnItemSelectedListener {
+>>>>>>> f34e35fc3da739ee1625423f0f4d6a9ef0b2f5e0
 
             when(it.itemId){
                 R.id.nb_home -> replaceFragment(Home())
