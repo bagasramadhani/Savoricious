@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".supjagung">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <VideoView
+        android:id="@+id/videosupjagung"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="44dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="196dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Sup Jagung"
+        android:textColor="@color/black_1"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="233dp"
+        app:srcCompat="@drawable/novikarolina" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView148"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="249dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Novi Carolina"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView149"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text=" Ingin menikmati sup jagung telur kental yang enak dan sedap? Yuk, coba resep sup jagung telur kental yang satu ini. Cara membuatnya cukup mudah. Selengkapnya, simak uraiannya di bawah ini."
+        android:textColor="@color/black_1"
+        android:textSize="9sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="342dp"
+        app:srcCompat="@drawable/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Bahan-Bahan"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="339dp"
+        app:srcCompat="@drawable/timebalado" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="325dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="2 buah jagung manis, dipipil"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView152"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="311dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="100 gram daging ayam, potong kecil-kecil"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView153"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="297dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1 batang daun bawang, dirajang"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView154"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="283dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1 butir bawang bombay, iris tipis"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView155"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="271dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="3 siung bawang putih dan merah, dirajang"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView156"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="257dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1 butir telur ayam, kocok lepas"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView157"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="243dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1 sdt garam"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView158"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="230dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1/2 sdt merica bubuk"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView159"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="217dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="750 ml air"
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="93dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Langkah-Langkah"
+        android:textColor="@color/black_1"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView162"
+        android:layout_width="207dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="307dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="1. Tumis bawang bombay, bawang merah, dan bawang putih hingga harum. Tambahkan air. Didihkan."
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView163"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="287dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="2.Masukkan daging ayam dan jagung ke rebusan. Aduk rata."
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView164"
+        android:layout_width="169dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="262dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="3.Tambahkan garam dan merica. Masukkan telur. Aduk rata."
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView165"
+        android:layout_width="155dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="238dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="4.Matikan api. Sajikan sup jagung telur selagi hangat."
+        android:textColor="@color/black_1"
+        android:textSize="8sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="204dp"
+        app:srcCompat="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginBottom="140dp"
+        app:srcCompat="@drawable/novikarolina" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginBottom="119dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Diposting Oleh"
+        android:textColor="@color/black_1"
+        android:textSize="9sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Novi Carolina"
+        android:textColor="@color/black_1"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ikuti"
+        android:layout_width="125.75dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/buttonshap"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Ikuti"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

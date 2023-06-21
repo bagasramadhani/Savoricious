@@ -7,17 +7,15 @@
     android:background="@color/white"
     tools:context=".Menu">
 
-    <!-- TODO: Update blank fragment layout -->
-
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_bar"
         android:layout_width="301dp"
         android:layout_height="56dp"
-        android:layout_margin="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/baegemail"
         android:hint="cari resep"
         android:text="16sp"
@@ -89,6 +87,7 @@
         android:text="Minuman"
         android:textSize="12sp"
         android:textColor="@color/whait"
+
          />
 
     <Button
@@ -213,6 +212,18 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="320dp"
         app:srcCompat="@drawable/baegmaka" />
+
+
+
+    <ImageView
+        android:id="@+id/telur1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="324dp"
+        app:srcCompat="@drawable/menutelur" />
 
 
     <TextView

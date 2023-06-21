@@ -244,7 +244,7 @@
         android:textSize="12sp" />
 
     <Button
-        android:id="@+id/buttonburger_rendah"
+        android:id="@+id/buttonburger"
         android:layout_width="125.75dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
@@ -269,7 +269,7 @@
         app:srcCompat="@drawable/baegmaka" />
 
     <Button
-        android:id="@+id/buttonpizza_khusus"
+        android:id="@+id/buttonpizza"
         android:layout_width="125.75dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"

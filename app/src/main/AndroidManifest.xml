@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -13,6 +12,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Savoricious"
         tools:targetApi="31">
+        <activity
+            android:name=".filter"
+            android:exported="false"
+            android:label="@string/title_activity_filter"
+            android:theme="@style/Theme.Savoricious.NoActionBar" />
+        <activity
+            android:name=".lumpurlabu"
+            android:exported="false" />
+        <activity
+            android:name=".bikaambon"
+            android:exported="false" />
+        <activity
+            android:name=".pieteler"
+            android:exported="false" />
+        <activity
+            android:name=".oatmelpsng"
+            android:exported="false" />
+        <activity
+            android:name=".supjagung"
+            android:exported="false" />
+        <activity
+            android:name=".pizzaayam"
+            android:exported="false" />
+        <activity
+            android:name=".burger"
+            android:exported="false" />
+        <activity
+            android:name=".eslaksamanamangga"
+            android:exported="false" />
+        <activity
+            android:name=".sarangbuah"
+            android:exported="false" />
+        <activity
+            android:name=".eskuwut"
+            android:exported="false" />
+        <activity
+            android:name=".tulangsup"
+            android:exported="false" />
+        <activity
+            android:name=".telurbalado"
+            android:exported="false" />
+        <activity
+            android:name=".nasiikanasin"
+            android:exported="false" />
+        <activity
+            android:name=".nasigoreng"
+            android:exported="false" />
         <activity
             android:name=".DetailNotif"
             android:exported="false">
@@ -62,199 +108,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
-
-
-        <activity
-            android:name=".IsiNotif"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-        <activity
-            android:name=".MenuDetail"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-
-
-
-
-        <activity
-            android:name=".LandingPage1"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Splash"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+        <activity android:name=".Menu" />
     </application>
 
 </manifest>
-<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:tools="http://schemas.android.com/tools">-->
-
-<!--    <application-->
-<!--        android:allowBackup="true"-->
-<!--        android:dataExtractionRules="@xml/data_extraction_rules"-->
-<!--        android:fullBackupContent="@xml/backup_rules"-->
-<!--        android:icon="@mipmap/ic_launcher"-->
-<!--        android:label="@string/app_name"-->
-<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
-<!--        android:supportsRtl="true"-->
-<!--        android:theme="@style/Theme.Savoricious"-->
-<!--        tools:targetApi="31">-->
-<!--        <activity-->
-<!--<<<<<<< HEAD-->
-<!--            android:name=".menukhusustinggi"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".menukue"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".menukhusus"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".menuminuman"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".custombuttonavbar"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".scrmakanan"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".daftar"-->
-<!--            android:exported="false" />-->
-<!--        <activity-->
-<!--            android:name=".sercmakanan"-->
-<!--            android:exported="false" />-->
-<!--=======-->
-<!--            android:name=".DetailNotif"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".Notifikasi"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--&gt;>>>>>> 0844d6e2c1ae4d6c43f9053f3062194f19025534-->
-<!--        <activity-->
-<!--            android:name=".HomePage"-->
-<!--            android:exported="true">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".SignIn_Page"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".LandingPage3"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".LandingPage2"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".DetailActivity"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-
-
-
-
-<!--        <activity-->
-<!--            android:name=".IsiNotif"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-
-<!--        <activity-->
-<!--            android:name=".MenuDetail"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-
-
-
-
-
-<!--        <activity-->
-<!--            android:name=".LandingPage1"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".Splash"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
-<!--    </application>-->
-
-<!--</manifest>-->

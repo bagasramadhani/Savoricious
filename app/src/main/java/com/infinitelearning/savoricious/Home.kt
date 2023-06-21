@@ -1,21 +1,16 @@
 package com.infinitelearning.savoricious
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.infinitelearning.savoricious.adapter.BahanAdapter
-import com.infinitelearning.savoricious.adapter.CardAdapter
 import com.infinitelearning.savoricious.databinding.FragmentHomeBinding
 import com.infinitelearning.savoricious.model.ModelBahan
-import kotlinx.android.synthetic.main.card_item.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -136,11 +131,11 @@ class Home : Fragment(),MenuClickListener {
 
         populatemenuDetaillist()
 
-        val home = this
-        binding.rvPopuler.apply {
-            layoutManager = GridLayoutManager(activity  , 2)
-            adapter = CardAdapter(menuDetaillist, home)
-        }
+//        val home = this
+//        binding.rvPopuler.apply {
+//            layoutManager = GridLayoutManager(activity  , 2)
+//            adapter = CardAdapter(menuDetaillist, home)
+//        }
 
         return view
     }
